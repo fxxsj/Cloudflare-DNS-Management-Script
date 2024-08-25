@@ -20,12 +20,16 @@
 
 ## 使用方法
 
+### DNS 管理脚本
+
 ```bash
-  curl -Ls https://raw.githubusercontent.com/fxxsj/Cloudflare-DNS-Management-Script/master/cf-dns.sh -o cf-dns.sh && chmod +x cf-dns.sh && ./cf-dns.sh
+  curl -Ls https://raw.githubusercontent.com/fxxsj/Cloudflare-DNS-Management-Script/master/cf-dns-mgr.sh -o cf-dns-mgr.sh && chmod +x cf-dns-mgr.sh && ./cf-dns-mgr.sh
   
 ```
 
+### DNS自动更新IP脚本
+
 ```bash
-  bash <(curl -Ls https://raw.githubusercontent.com/fxxsj/Cloudflare-DNS-Management-Script/master/cf-dns.sh)
+  curl -Ls https://raw.githubusercontent.com/fxxsj/Cloudflare-DNS-Management-Script/master/cf-v4-ddns.sh -o cf-v4-ddns.sh && chmod +x cf-v4-ddns.sh && ./cf-v4-ddns.sh
 
 ```
