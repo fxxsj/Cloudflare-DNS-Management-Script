@@ -16,12 +16,12 @@ CFRECORD_TYPE="AAAA"  # 记录类型，A(IPv4) 或 AAAA(IPv6)
 
 CFTTL=120  # Cloudflare TTL 设置
 FORCE=false  # 忽略本地文件，强制更新 IP
-WANIPSITE="http://ipv4.icanhazip.com"  # 用于获取公网 IP 的网站
+WANIPSITE="https://ipv4.icanhazip.com"  # 用于获取公网 IP 的网站
 
 # 根据记录类型选择 IP 获取网站
 case "$CFRECORD_TYPE" in
-  "AAAA") WANIPSITE="http://ipv6.icanhazip.com" ;;
-  "A")    WANIPSITE="http://ipv4.icanhazip.com" ;;
+  "AAAA") WANIPSITE="https://ipv6.icanhazip.com" ;;
+  "A")    WANIPSITE="https://ipv4.icanhazip.com" ;;
   *)      echo "无效的 CFRECORD_TYPE 值，只能是 A(IPv4) 或 AAAA(IPv6)"; exit 2 ;;
 esac
 
